@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&display=swap');
+body{
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 48%);
+
+    font-family: 'Commissioner', sans-serif;
+    font-size:16px;
+
+    margin:0;
+    padding:0;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+header{
+    width: 100%;
+    height: 25em;
+    background: url("../images/image-hero-mobile.jpg");
+    background-size: cover;
+}
+
+nav{
+    background: linear-gradient(to bottom ,rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0));
+}
+
+#logo{
+    vertical-align: top!important;
+}
+
+.link{
+    color: white;
+    text-decoration:none;
+    font-weight: 400;
+    margin-right: .5em;
+}
+
+.link:hover, .link:focus{
+    color:white;
+}
+
+#nav-desktop{
+    display: none !important;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    header{
+        background: url("../images/image-hero-desktop.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #nav-desktop{
+        display: flex !important;
+    }
+    
+    #nav-mobile{
+        display: none !important;
+    }
+}
+    
